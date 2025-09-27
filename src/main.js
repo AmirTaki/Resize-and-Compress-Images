@@ -45,4 +45,8 @@ widthInput.addEventListener("keyup", () => {
 const resizeAndDownload = () => {
     const canvas =  document.createElement('canvas')
     const a =  document.createElement('a')
+    const ctx = canvas.getContext('2d')
+
+
+    const imgQuality = qualityInput.checked ? .5 : 1.0
 }
