@@ -40,3 +40,9 @@ widthInput.addEventListener("keyup", () => {
     widthInput.value = Math.floor(width)
 
 })
+
+
+const resizeAndDownload = () => {
+    const canvas =  document.createElement('canvas')
+    const a =  document.createElement('a')
+}
