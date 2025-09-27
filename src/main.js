@@ -28,3 +28,10 @@ const loadFile = (e) => {
         document.querySelector('.wrapper').classList.add('active')
     })
 }
+
+
+widthInput.addEventListener("keyup", () => {
+    const height = ratioInput.checked ? widthInput.value / ogImageRatio : heightInput.value;
+    heightInput.value = Math.floor(height)
+
+})
