@@ -30,8 +30,13 @@ const loadFile = (e) => {
 }
 
 
-widthInput.addEventListener("keyup", () => {
-    const height = ratioInput.checked ? widthInput.value / ogImageRatio : heightInput.value;
+heightInput.addEventListener("keyup", () => {
+    const height = ratioInput.checked ? heightInput.value / ogImageRatio : heightInput.value;
     heightInput.value = Math.floor(height)
+
+})
+widthInput.addEventListener("keyup", () => {
+    const width = ratioInput.checked ? widthInput.value / ogImageRatio : widthInput.value;
+    widthInput.value = Math.floor(width)
 
 })
