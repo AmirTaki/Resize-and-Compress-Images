@@ -22,6 +22,8 @@ const loadFile = (e) => {
 
 
     previewImg.addEventListener('load', () => {
-        
+        widthInput.value  = previewImg.naturalWidth;
+        heightInput.value = previewImg.naturalHeight;
+        ogImageRatio = previewImg.naturalWidth / previewImg.naturalHeight
     })
 }
