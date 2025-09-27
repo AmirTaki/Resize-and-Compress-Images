@@ -25,5 +25,6 @@ const loadFile = (e) => {
         widthInput.value  = previewImg.naturalWidth;
         heightInput.value = previewImg.naturalHeight;
         ogImageRatio = previewImg.naturalWidth / previewImg.naturalHeight
+        document.querySelector('.wrapper').classList.add('active')
     })
 }
