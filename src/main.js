@@ -13,4 +13,15 @@ let ogImageRatio;
 
 const loadFile = (e) => {
     const file = e.target.files[0]
+
+    if(!file) return;
+
+
+
+    previewImg.src = URL.createObjectURL(file);
+
+
+    previewImg.addEventListener('load', () => {
+        
+    })
 }
