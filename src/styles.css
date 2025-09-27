@@ -12,3 +12,15 @@ body{
   min-height: 100vh;
   background: #927DFC;
 }
+
+.wrapper{
+  width: 450px;
+  height: 288px;
+  padding: 30px;
+  background: #fff;
+  border-radius: 9px;
+  transition: height 0.2s ease;
+}
+.wrapper.active{
+  height: 537px;
+}
