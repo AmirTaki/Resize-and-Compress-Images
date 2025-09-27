@@ -54,4 +54,7 @@ const resizeAndDownload = () => {
     canvas.height = heightInput.value;
 
     ctx.drawImage(previewImg, 0, 0, canvas.width, canvas.height)
+
+    a.href = canvas.toDataURL('image/jpeg', imgQuality);
+    a.download = new Date().getTime();
 }
