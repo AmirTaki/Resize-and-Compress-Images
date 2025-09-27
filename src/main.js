@@ -57,4 +57,9 @@ const resizeAndDownload = () => {
 
     a.href = canvas.toDataURL('image/jpeg', imgQuality);
     a.download = new Date().getTime();
+
+    a.click()
 }
+
+downloadBtn.addEventListener('click', resizeAndDownload)
+fileInput.addEventListener('change', loadFile)
