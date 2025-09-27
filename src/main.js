@@ -49,4 +49,9 @@ const resizeAndDownload = () => {
 
 
     const imgQuality = qualityInput.checked ? .5 : 1.0
+
+    canvas.width = widthInput.value;
+    canvas.height = heightInput.value;
+
+    ctx.drawImage(previewImg, 0, 0, canvas.width, canvas.height)
 }
