@@ -6,3 +6,11 @@ const uploadBox =  document.querySelector('.upload-box'),
     ratioInput = document.querySelector('.ratio input'),
     qualityInput = document.querySelector('.quality input'),
     downloadBtn = document.querySelector('.download-btn')
+
+
+let ogImageRatio;
+
+
+const loadFile = (e) => {
+    const file = e.target.files[0]
+}
