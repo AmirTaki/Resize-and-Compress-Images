@@ -4,4 +4,5 @@ const uploadBox =  document.querySelector('.upload-box'),
     widthInput = document.querySelector('.width input'),
     heightInput = document.querySelector('.height input'),
     ratioInput = document.querySelector('.ratio input'),
-    ratioInput = document.querySelector('.ratio input'),
+    qualityInput = document.querySelector('.quality input'),
+    downloadBtn = document.querySelector('.download-btn')
